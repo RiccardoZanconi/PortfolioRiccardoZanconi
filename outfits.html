@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>outfits</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font: Cormorant Garamond -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
   <style>
     * {
@@ -33,28 +34,25 @@
       margin-bottom: 40px;
     }
 
-    .crop {
+    .row-two .crop {
+      width: 50%;
+      height: 700px;
       overflow: hidden;
       position: relative;
     }
 
-    .row-two .crop {
-      width: 50%;
-      height: 700px;
-    }
-
-    .row-three .crop {
-      width: 33.333%;
-      height: 600px;
-    }
-
-    .row-two .crop img,
-    .single .crop img {
+    .row-two .crop img {
       position: absolute;
       width: 100%;
       height: auto;
       top: -140px;
       left: 0;
+    }
+
+    .row-three .crop {
+      width: 33.333%;
+      height: 600px;
+      overflow: hidden;
     }
 
     .row-three .crop img {
@@ -73,7 +71,17 @@
     .single .crop {
       width: 60%;
       height: 700px;
+      overflow: hidden;
+      position: relative;
       margin-bottom: 80px;
+    }
+
+    .single .crop img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: -140px;
+      left: 0;
     }
 
     .single .crop.full {
@@ -105,6 +113,9 @@
     }
 
     .back-link {
+      position: fixed;
+      top: 30px;
+      right: 30px;
       font-size: 14px;
       font-family: 'Cormorant Garamond', serif;
       letter-spacing: 1.5px;
@@ -112,23 +123,6 @@
       text-decoration: none;
       text-transform: uppercase;
       transition: opacity 0.2s ease;
-      right: 30px;
-    }
-
-    /* Mobile: link fisso */
-    @media (max-width: 767px) {
-      .back-link {
-        position: fixed;
-        top: 30px;
-      }
-    }
-
-    /* Desktop: link scorrevole */
-    @media (min-width: 768px) {
-      .back-link {
-        position: absolute;
-        top: 30px;
-      }
     }
 
     .back-link:hover {
@@ -136,7 +130,8 @@
     }
 
     footer {
-      margin-top: 60px;
+      position: absolute;
+      bottom: 30px;
       width: 100%;
       text-align: center;
       font-size: 16px;
@@ -152,8 +147,6 @@
   <a href="index.html" class="back-link">← home</a>
 
   <div class="container">
-
-    <!-- Le tue sezioni restano invariate -->
 
     <div class="month-label">– APRIL 2025 –</div>
     <div class="row-two">
