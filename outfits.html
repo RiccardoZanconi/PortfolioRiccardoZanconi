@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>outfits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font: Cormorant Garamond -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #eee;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .row-two,
+    .row-three {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .row-two .crop {
+      width: 50%;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .row-two .crop img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: -140px;
+      left: 0;
+    }
+
+    .row-three .crop {
+      width: 33.333%;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .row-three .crop img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+
+    .single {
+      display: flex;
+      justify-content: center;
+    }
+
+    .single .crop {
+      width: 60%;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 80px;
+    }
+
+    .single .crop img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: -140px;
+      left: 0;
+    }
+
+    .single .crop.full {
+      width: 60%;
+      margin: 0 auto 80px;
+      overflow: visible;
+      position: static;
+      height: auto;
+    }
+
+    .single .crop.full img {
+      position: static;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .section-spacer {
+      height: 100px;
+    }
+
+    .month-label {
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: #888;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .back-link {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      font-size: 14px;
+      font-family: 'Cormorant Garamond', serif;
+      letter-spacing: 1.5px;
+      color: #aaa;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: opacity 0.2s ease;
+    }
+
+    .back-link:hover {
+      opacity: 0.5;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      color: #888;
+      opacity: 0.4;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-link">← home</a>
+
+  <div class="container">
+
+    <div class="month-label">– APRIL 2025 –</div>
+    <div class="row-two">
+      <div class="crop"><img src="img/outfits/april2025-1.jpg" alt=""></div>
+      <div class="crop"><img src="img/outfits/april2025-2.jpg" alt=""></div>
+    </div>
+    <div class="row-three">
+      <div class="crop"><img src="img/outfits/april2025-3.jpg" alt=""></div>
+      <div class="crop"><img src="img/outfits/april2025-4.jpg" alt=""></div>
+      <div class="crop"><img src="img/outfits/april2025-5.jpg" alt=""></div>
+    </div>
+    <div class="single">
+      <div class="crop">
+        <img src="img/outfits/april2025-6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <div class="month-label">– JANUARY 2025 –</div>
+    <div class="row-two">
+      <div class="crop"><img src="img/outfits/january2025-1.jpg" alt=""></div>
+      <div class="crop"><img src="img/outfits/january2025-2.jpg" alt=""></div>
+    </div>
+    <div class="single">
+      <div class="crop">
+        <img src="img/outfits/january2025-3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <div class="month-label">– NOVEMBER 2024 –</div>
+    <div class="row-two" style="margin-bottom: 80px;">
+      <div class="crop"><img src="img/outfits/november2024-1.jpg" alt=""></div>
+      <div class="crop"><img src="img/outfits/november2024-2.jpg" alt=""></div>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <div class="month-label">– OCTOBER 2024 –</div>
+    <div class="row-two">
+      <div class="crop"><img src="img/outfits/october2024-1.jpg" alt=""></div>
+      <div class="crop"><img src="img/outfits/october2024-2.jpg" alt=""></div>
+    </div>
+    <div class="single">
+      <div class="crop">
+        <img src="img/outfits/october2024-3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <div class="month-label">– MARCH 2024 –</div>
+    <div class="single">
+      <div class="crop full">
+        <img src="img/outfits/march2024-1.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <footer>Riccardo Zanconi</footer>
+</body>
+</html>

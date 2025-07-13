@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>diary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font: Cormorant Garamond -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      opacity: 0;
+      animation: fadeIn 2s ease 0.4s forwards;
+      transition: opacity 0.5s ease;
+    }
+
+    .menu a {
+      font-size: 32px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 25px;
+      transition: opacity 0.2s ease;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    .menu a span {
+      display: inline-block;
+      transform: scaleX(1.8) scaleY(0.7) translateX(5%);
+      transform-origin: center;
+    }
+
+    .menu a:hover {
+      opacity: 0.4;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      color: #888;
+      opacity: 0.4;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Titolo invisibile per i motori e per te -->
+  <h1 style="position: absolute; left: -9999px;">diary</h1>
+
+  <div class="menu" id="menu">
+    <a href="outfits.html"><span>OUTFITS</span></a>
+    <a href="diary.html"><span>DIARY</span></a>
+  </div>
+
+  <footer>Riccardo Zanconi</footer>
+
+  <script>
+    let menu = document.getElementById("menu");
+    let timer;
+
+    window.addEventListener("mousemove", () => {
+      menu.style.opacity = 0.3;
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        menu.style.opacity = 1;
+      }, 800);
+    });
+  </script>
+
+</body>
+</html>
