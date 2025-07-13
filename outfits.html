@@ -113,8 +113,6 @@
       text-decoration: none;
       text-transform: uppercase;
       transition: opacity 0.2s ease;
-      top: 30px;
-      right: 30px;
     }
 
     @media (max-width: 767px) {
@@ -143,12 +141,16 @@
 
       .back-link {
         position: fixed;
+        top: 30px;
+        right: 30px;
       }
     }
 
     @media (min-width: 768px) {
       .back-link {
-        position: absolute;
+        position: static;
+        margin-bottom: 40px;
+        display: block;
       }
     }
 
