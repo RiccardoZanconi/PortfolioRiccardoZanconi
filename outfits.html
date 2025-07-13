@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>outfits</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font: Cormorant Garamond -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
   <style>
     * {
@@ -113,44 +112,22 @@
       text-decoration: none;
       text-transform: uppercase;
       transition: opacity 0.2s ease;
+      right: 30px;
     }
 
+    /* Mobile: link fisso */
     @media (max-width: 767px) {
-      .row-two,
-      .row-three,
-      .single {
-        flex-direction: column;
-        gap: 40px;
-      }
-
-      .row-two .crop,
-      .row-three .crop,
-      .single .crop,
-      .single .crop.full {
-        width: 100%;
-        height: auto;
-      }
-
-      .row-two .crop img,
-      .single .crop img {
-        position: static;
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
       .back-link {
         position: fixed;
         top: 30px;
-        right: 30px;
       }
     }
 
+    /* Desktop: link scorrevole */
     @media (min-width: 768px) {
       .back-link {
-        position: static;
-        margin-bottom: 40px;
-        display: block;
+        position: absolute;
+        top: 30px;
       }
     }
 
@@ -175,6 +152,8 @@
   <a href="index.html" class="back-link">← home</a>
 
   <div class="container">
+
+    <!-- Le tue sezioni restano invariate -->
 
     <div class="month-label">– APRIL 2025 –</div>
     <div class="row-two">
