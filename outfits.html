@@ -130,8 +130,7 @@
     }
 
     footer {
-      position: absolute;
-      bottom: 30px;
+      margin-top: 60px;
       width: 100%;
       text-align: center;
       font-size: 16px;
@@ -139,6 +138,21 @@
       opacity: 0.4;
       font-style: italic;
       letter-spacing: 1px;
+    }
+
+    /* Mobile layout: impilamento */
+    @media (max-width: 767px) {
+      .row-two,
+      .row-three {
+        flex-direction: column;
+      }
+
+      .row-two .crop,
+      .row-three .crop,
+      .single .crop,
+      .single .crop.full {
+        width: 100%;
+      }
     }
   </style>
 </head>

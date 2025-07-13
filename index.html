@@ -75,11 +75,18 @@
         opacity: 1;
       }
     }
+
+    /* SOLO SU DISPOSITIVI MOBILI */
+    @media (max-width: 768px) {
+      .menu a {
+        font-size: 20px;
+        letter-spacing: 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Titolo invisibile per i motori e per te -->
   <h1 style="position: absolute; left: -9999px;">diary</h1>
 
   <div class="menu" id="menu">
