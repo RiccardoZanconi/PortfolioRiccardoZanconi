@@ -134,29 +134,34 @@
 
     /* MOBILE ADAPTATION */
     @media (max-width: 767px) {
-      .row-two,
-      .row-three,
-      .single {
-        flex-direction: column;
-        gap: 40px;
-      }
+  .row-two,
+  .row-three,
+  .single {
+    flex-direction: column;
+    gap: 40px;
+  }
 
-      .row-two .crop,
-      .row-three .crop,
-      .single .crop,
-      .single .crop.full {
-        width: 100%;
-        height: auto;
-      }
+  .row-two .crop,
+  .row-three .crop,
+  .single .crop,
+  .single .crop.full {
+    width: 100%;
+    height: auto;
+  }
 
-      .row-two .crop img,
-      .single .crop img {
-        position: static;
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    }
+  .row-two .crop img,
+  .single .crop img {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .back-link {
+    display: none; /* ← nasconde il link home su telefono */
+  }
+}
+
   </style>
 </head>
 <body>

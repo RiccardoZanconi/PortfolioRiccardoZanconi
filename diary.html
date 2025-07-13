@@ -6,83 +6,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    body {
-      background: #000;
-      color: #eee;
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 300;
-      padding: 60px 20px 100px;
-      position: relative;
-    }
+  body {
+    background: #000;
+    color: #eee;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    padding: 60px 20px 100px;
+    position: relative;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
-    .photo-section {
-      margin-bottom: 120px;
-      text-align: center;
-    }
+  .photo-section {
+    margin-bottom: 120px;
+    text-align: center;
+  }
 
-    .photo-section h2 {
-      font-size: 14px;
-      letter-spacing: 2px;
-      color: #888;
-      margin-bottom: 40px;
-      text-transform: uppercase;
-    }
+  .photo-section h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
 
-    .photo-section img {
-      width: 100%;
-      max-width: 700px;
-      height: auto;
-      margin: 0 auto 40px;
-      display: block;
-    }
+  .photo-section img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto 40px;
+    display: block;
+  }
 
+  .nav {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #aaa;
+    text-align: right;
+  }
+
+  .nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav a:hover {
+    opacity: 0.5;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    opacity: 0.3;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+  /* Nasconde il menu solo da mobile */
+  @media (max-width: 767px) {
     .nav {
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      font-size: 13px;
-      letter-spacing: 1px;
-      color: #aaa;
-      text-align: right;
+      display: none;
     }
+  }
+</style>
 
-    .nav a {
-      display: block;
-      margin-bottom: 10px;
-      color: #aaa;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: opacity 0.2s ease;
-    }
-
-    .nav a:hover {
-      opacity: 0.5;
-    }
-
-    footer {
-      position: fixed;
-      bottom: 20px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      font-size: 16px;
-      color: #777;
-      opacity: 0.3;
-      font-style: italic;
-      letter-spacing: 1px;
-    }
-  </style>
 </head>
 <body>
 
